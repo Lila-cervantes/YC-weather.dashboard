@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard API</title>
+</head>
+
+<body>
+    <header class="container-fluid text-align-right text-purple">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+
+    <section class="side">
+        <aside id="aside">
+            <h2> Search for a City</h2>
+            <form id="city-form" class="card">
+                <input stype="city-input"></input>
+                <div class="input-append">
+                    <button type="submit" class="button">Search</button>
+                </div>
+            </form>
+        </aside>
+    </section>
+
+
+    <section class="city-info">
+        <section class="" id="">
+            <h4 id="city"> <span id="date"></span></h4>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="index"></p>
+            <p id="wind"></p>
+        </section>
+    </section>
+
+
+    <section class="forecast">
+        <h2 id="five-days" class="lighting">5 Day Forecast: </h2>
+        <div class="card-days">
+            <p id="date-1"></p>
+            <p id="temperature-1"></p>
+            <p id="humidity-1"></p>
+            <p id="index-1"></p>
+            <p id="wind-1"></p>
+        </div>
+        <div class="card-days">
+            <p id="date-2"></p>
+            <p id="temperature-2"></p>
+            <p id="humidity-2"></p>
+            <p id="index-2"></p>
+            <p id="wind-2"></p>
+        </div>
+        <div class="card-days">
+            <p id="date-3"></p>
+            <p id="temperature-3"></p>
+            <p id="humidity-3"></p>
+            <p id="index-3"></p>
+            <p id="wind-3"></p>
+        </div>
+        <div class="card-days">
+            <p id="date-4"></p>
+            <p id="temperature-4"></p>
+            <p id="humidity-4"></p>
+            <p id="index-4"></p>
+            <p id="wind-4"></p>
+        </div>
+        <div class="card-days">
+            <p id="date-5"></p>
+            <p id="temperature-5"></p>
+            <p id="humidity-5"></p>
+            <p id="index-5"></p>
+            <p id="wind-5"></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="clear-history">
+            <button id="clear">Clear History</button>
+        </div>
+    </section>
+
+    </div>
+    <script src="./assets/weatherD.js"></script>
+</body>
+
+</html>
