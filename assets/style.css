@@ -1,0 +1,23 @@
+header {
+    text-align: center;
+    color: white;
+    background: rgb(72, 72, 91);
+    
+    size: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+*{
+    box-sizing: border-box;
+}
+/*
+#dayof {
+    margin: 20px;
+    border-style: dotted;
+}
+.forecast {
+    float:right;
+    margin-right: 230px;
+    display:inline-table;
+    border-style: dotted;
+}
