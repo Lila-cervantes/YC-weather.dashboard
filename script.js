@@ -1,3 +1,4 @@
+var city=" ";
 //define variables
 var APIKey = "f92d40b25d362f56142c7d9e8a8addc1";
 var baseURL = "https://api.openweathermap.org/data/2.5/weather?q=chicago&appid=" + APIKey;
@@ -16,11 +17,11 @@ function test() {
     }).then(function (data) {
 
         var tempContainer = document.createElement('p')
-        tempContainer.innerText = 'Temp: ' + (data.main.temp * 1.8 - 459)
+        tempContainer.innerText = 'Temp: ' + (data.main.temp * 1.8 - 459) + '*F'
         temperature.appendChild(tempContainer)
 
         var humidityContainer = document.createElement('p')
-        humidityContainer.innerText = 'Humidity: ' + (data.main.humidity)
+        humidityContainer.innerText = 'Humidity: ' + (data.main.humidity) + '%'
         humidity.appendChild(humidityContainer)
 
         var windContainer = document.createElement('p')
@@ -34,16 +35,6 @@ function test() {
     });
 }
 
-
-var temperature = document.querySelector('#temperature');
-var humidity = document.querySelector('#humidity');
-var index = document.querySelector('#index');
-var wind = document.querySelector('#wind');
-var input = document.querySelector('#citysearch')
-//var name = document.querySelector()
-//var searchedCity = $(JSON.parse(localStorage.getItem('saved')));
-//var $SearchButton = $('#search');
-//var $clearButton = $('#clear');
 let createImg1 = document.createElement('img');
 let createImg2 = document.createElement('img');
 let createImg3 = document.createElement('img');
@@ -51,3 +42,12 @@ let createImg3 = document.createElement('img');
 test();
 // user to enter city name in the input
 // user to click search
+
+function historyClear(event) {
+    event.preventDefault();
+    localStorage.removeItem('cityname');
+    document.location.reload()
+}
+
+$('#search').on('click', displayWeather);
+$('#history-clear').on('click', historyClear)

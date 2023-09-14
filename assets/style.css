@@ -14,10 +14,26 @@ header {
 #dayof {
     margin: 20px;
     border-style: dotted;
+} */
+#search {
+    margin-top: 15px;
 }
-.forecast {
-    float:right;
-    margin-right: 230px;
+#history-clear {
+    margin-top: 15px;
+}
+#forecastContainer {
+    border-color: red;
+    margin-top: 100px;
+    margin-left: 240px;
     display:inline-table;
     border-style: dotted;
+    background-color: rgb(201, 201, 201);
+    border-style: rounded;
+}
+#display {
+    flex-direction: column;
+}
+button:hover {
+    background-color: rgb(194, 194, 232);
+    text: white;
 }

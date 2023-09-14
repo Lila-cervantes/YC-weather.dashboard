@@ -22,45 +22,61 @@
                 <div class="input-city md-3">
                     <input type="text" class="form-control">
                     <div class="input-city append">
-                        <button class="search">Search</button>
+                        <button id="search" class="btn btn secondnary">Search</button>
                     </div>
                 </div>
-                <button class="clear-button" type="button" id="history-clear">Clear History</button>
+                <button class="btn btn secondnary" type="button" id="history-clear">Clear History</button>
+                <ul class="city-list">
+
+                </ul>
             </div>
         
             <div class="col-sm-8" id="dayof">
-                <h4>>Placeholder</h4>
-                <div id="temperature"></div>
-                <p id="humidity"></p>
-                <p id="index"></p>
-                <p id="wind"></p>
-            </div>
+                <div id= "display"class="row ml-2">
+                    <h3 class="name mb-2 mt-2" id="searched-city"></h3>
+                    <p id="temperature" class="current"></p>
+                    <p id="humidity" class="current"></p>
+                    <p id="uv-index" class="current"></p>
+                    <p id="wind" class="current"></p>
+                </div>
+            
     
 
-            <div id="forecastContainer" class="forecast">
-                <h2 id="five-days" class="lighting">5 Day Forecast: </h2>
-
-
-                <div id="cardContainer" class="row hide">
-                    <!-- display weather data here-->
-                </div>
-
-                <div id="cardContainer" class="row hide">
-                    <!-- display weather data here-->
-                </div>
-
-                <div id="cardContainer" class="row hide">
-                <!-- display weather data here-->
-                </div>
-
-                <div id="cardContainer" class="row hide">
-                <!-- display weather data here-->
+                <div id="forecastContainer"  class="hide">
+                    <h2>5 Day Forecast: </h2>
+                    <div class="row">
+                        <div class="forecast1" >
+                            <p id="day1"></p>
+                            <p id="temperature1"></p>
+                            <p id="Humidity1"></p>
+                        </div>
+                        <div class="forecast2" >
+                            <p id="day2"></p>
+                            <p id="Temperature2"></p>
+                            <p id="fHumidity"></p>
+                        </div>
+                        <div class="col-sm-2 rounded border border-dark" >
+                            <p id="day3"></p>
+                            <p id="fTemperature"></p>
+                            <p id="fHumidity"></p>
+                        </div>
+                        <div class="col-sm-2 rounded" >
+                            <p id="day4"></p>
+                            <p id="fTemperature"></p>
+                            <p id="fHumidity"></p>
+                        </div>
+                        <div class="col-sm-2 rounded" >
+                            <p id="day5"></p>
+                            <p id="fTemperature"></p>
+                            <p id="fHumidity"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="script.js"></script>
 </body>
 
